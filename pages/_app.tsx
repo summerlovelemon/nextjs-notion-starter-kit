@@ -49,7 +49,7 @@ export default function App({ Component, pageProps }) {
 
   React.useEffect(() => {
     if (fathomId) {
-      Fathom.load(fathomId, fathomConfig)
+      Fathom.load(fathomId)
 
       function onRouteChangeComplete() {
         Fathom.trackPageview()
