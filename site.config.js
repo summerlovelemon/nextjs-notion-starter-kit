@@ -7,9 +7,9 @@ module.exports = {
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: '夏天芒果冰沙的小屋',
-  domain: 'notionblog-two.vercel.app',
-  author: 'summerlovelemon',
+  name: '乌龙茶茶',
+  domain: 'wltea.xyz',
+  author: '乌龙茶茶',
 
   // open graph metadata (optional)
   description: '都是一些碎碎念',
