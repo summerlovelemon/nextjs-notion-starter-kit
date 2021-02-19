@@ -35,9 +35,7 @@ export const Footer: React.FC<{
 
 
       <div className="styles_powerby__nwSPg">
-      Powered   by<a href="http://transitivebullsh.it" title="Visit him">
-      transitive-bullshit
-      </a>
+      <div className={styles.copyright}>Powered by&nbsp;<a href="http://transitivebullsh.it" title="Visit him" >transitive-bullshit</a></div>
       </div>
     </footer>
   )
