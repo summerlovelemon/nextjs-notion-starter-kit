@@ -7,14 +7,12 @@
  * places to add some flare.
  */
 
-.notion {
+ .notion {
   --notion-max-width: 720px;
   --notion-header-height: 54px;
 }
 
 .notion-page {
-  margin: 0 12px;
-  width: var(--notion-max-width);
   padding-bottom: calc(max(5vh, 32px)) !important;
   line-height: 1.65;
 }
