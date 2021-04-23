@@ -8,7 +8,7 @@ export default class MyDocument extends Document {
       <IconContext.Provider value={{ style: { verticalAlign: 'middle' } }}>
         <Html lang='en'>
           <Head>
-            <meta name="baidu-site-verification" content="code-6yP8PJZ3gR" />
+            
             <link rel='shortcut icon' href='/favicon.png' />
 
             <link
