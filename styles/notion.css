@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /**
  * This file contains site-specifc style overrides for Notion elements from
  * react-notion-x.
@@ -333,7 +333,7 @@
   border-image: linear-gradient(90.68deg, #b439df 0.26%, #e5337e 102.37%);
   border-image-slice: 1;
 }
-=======
+
 /**
  * This file contains site-specifc style overrides for Notion elements from
  * react-notion-x.
@@ -668,4 +668,4 @@
   border-image: linear-gradient(90.68deg, #b439df 0.26%, #e5337e 102.37%);
   border-image-slice: 1;
 }
->>>>>>> ba0c6f055aaa1553b5187ea98800a965ee998c93
+
