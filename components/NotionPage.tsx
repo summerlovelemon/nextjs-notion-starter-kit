@@ -173,6 +173,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
       <Head>
         <meta property='og:title' content={title} />
         <meta property='og:site_name' content={site.name} />
+        <meta name='twitter:title' content={title} />
+        <meta property='twitter:domain' content={site.domain} />
         <title>{title}</title>
       </Head>
 
