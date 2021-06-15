@@ -7,7 +7,6 @@ import * as types from 'lib/types'
 export const PageHead: React.FC<types.PageProps> = ({ site }) => {
   return (
     <Head>
-      <meta name="baidu-site-verification" content="code-6yP8PJZ3gR" />
       <meta charSet='utf-8' />
       <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
       <meta

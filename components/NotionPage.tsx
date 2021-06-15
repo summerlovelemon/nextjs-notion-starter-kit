@@ -170,7 +170,11 @@ export const NotionPage: React.FC<types.PageProps> = ({
     >
       <PageHead site={site} />
 
-
+      <Head>
+        <meta property='og:title' content={title} />
+        <meta property='og:site_name' content={site.name} />
+        <title>{title}</title>
+      </Head>
 
       <CustomFont site={site} />
 
