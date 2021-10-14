@@ -3,6 +3,7 @@ import { domain } from 'lib/config'
 import { resolveNotionPage } from 'lib/resolve-notion-page'
 import { NotionPage } from 'components'
 
+
 export const getStaticProps = async () => {
   try {
     const props = await resolveNotionPage(domain)

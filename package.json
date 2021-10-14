@@ -30,6 +30,7 @@
     "classnames": "^2.3.1",
     "date-fns": "^2.21.1",
     "fathom-client": "^3.0.0",
+    "feed": "^4.2.2",
     "got": "^11.8.2",
     "isomorphic-unfetch": "^3.1.0",
     "lqip-modern": "^1.2.0",
@@ -47,7 +48,8 @@
     "react-notion-x": "^4.6.5",
     "react-static-tweets": "^0.5.3",
     "react-use": "^17.2.4",
-    "static-tweets": "^0.5.3",
+    "reactstrap": "^8.10.0",
+    "static-tweets": "0.5.3",
     "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
