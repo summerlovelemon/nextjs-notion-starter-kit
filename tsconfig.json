@@ -18,5 +18,5 @@
     "typeRoots": ["./node_modules/@types"]
   },
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "lib/locale.js", "blog.config.js"]
 }

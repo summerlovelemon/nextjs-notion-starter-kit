@@ -1,11 +1,16 @@
 import * as React from 'react'
-import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaRss } from 'react-icons/fa'
 import { IoSunnyOutline, IoMoonSharp } from 'react-icons/io5'
 import * as config from 'lib/config'
+import { host } from 'lib/config'
+
+
 
 import styles from './styles.module.css'
 
 // TODO: merge the data and icons from PageSocial with the social links in Footer
+
+
 
 export const Footer: React.FC<{
   isDarkMode: boolean
@@ -41,8 +46,9 @@ export const Footer: React.FC<{
       ) : null}
 
 
+
       <div className="styles_powerby__nwSPg">
-      <div className={styles.copyright}>Powered by&nbsp;<a href="http://transitivebullsh.it" title="Visit him" >transitive-bullshit</a></div>
+        <div className={styles.copyright}>Powered by&nbsp;<a href="http://transitivebullsh.it" title="Visit him" >transitive-bullshit</a></div>
       </div>
     </footer>
   )
