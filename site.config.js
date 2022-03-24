@@ -7,7 +7,7 @@ module.exports = {
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: '乌龙茶茶',
+  name: '乌龙茶茶的小天地',
   domain: 'wltea.xyz',
   author: '乌龙茶茶',
 
