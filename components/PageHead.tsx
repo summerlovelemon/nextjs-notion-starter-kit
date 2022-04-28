@@ -33,6 +33,7 @@ export const PageHead: React.FC<types.PageProps> = ({ site }) => {
         /*．．．*/
         $webfont.draw();
       </script>
+      <script async defer data-website-id="80f5f89a-46c6-450d-89ce-12eb8632c3f9" src="https://umami.wltea.xyz/umami.js"></script>
     </Head>
   )
 }
