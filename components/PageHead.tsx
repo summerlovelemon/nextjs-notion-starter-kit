@@ -30,7 +30,7 @@ export const PageHead: React.FC<types.PageProps> = ({ site }) => {
         $webfont.load(".notion-h-title", "57f09dabc1804f9b84b599c9b079f4f7", "Source-Han-Light")
         $webfont.load(".notion-callout-text", "4b16fb28383b409090d0b09c84c8c8d9", "JetLinkMediumMing");
         /*$webfont.load("notion-callout-text", "75a63f6c2f6d4bb7aee6902ac050dec2", "SourceHanS-S_B");*/
-        /*．．．*/
+
         $webfont.draw();
       </script>
       <script async defer data-website-id="80f5f89a-46c6-450d-89ce-12eb8632c3f9" src="https://umami.wltea.xyz/umami.js"></script>
