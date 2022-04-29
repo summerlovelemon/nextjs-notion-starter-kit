@@ -58,7 +58,22 @@
 .copyright {
   font-size: 80%;
   padding: 0.5em;
+  float:left;
 }
+
+.license {
+  font-size: 80%;
+  padding: 0.5em;
+  float:left;
+}
+
+.copyright1 {
+  font-size: 80%;
+  padding: 0.5em;
+  float:right;
+}
+
+
 
 .settings,
 .social {

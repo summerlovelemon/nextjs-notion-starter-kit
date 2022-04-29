@@ -32,7 +32,7 @@ export const Footer: React.FC<{
   return (
     <footer className={styles.footer}>
       <div className={styles.copyright}>Copyright 2021-2022 {config.author}
-        <div className={styles.license}>本作品采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a>进行许可。</div>
+        <div className={styles.license}>博客采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a>进行许可。</div>
       </div>
 
       {hasMounted ? (
@@ -50,7 +50,7 @@ export const Footer: React.FC<{
 
 
       <div className="styles_powerby__nwSPg">
-        <div className={styles.copyright}>Powered by&nbsp;<a href="http://transitivebullsh.it" title="Visit him" >transitive-bullshit</a></div>
+        <div className={styles.copyright1}>Powered by&nbsp;<a href="http://transitivebullsh.it" title="Visit him" >transitive-bullshit</a></div>
       </div>
     </footer>
   )
