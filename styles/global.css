@@ -21,6 +21,20 @@ body {
   overflow-x: hidden;
 }
 
+/*页面鼠标默认样式*/
+body {
+  /* 鼠标图标 */
+  cursor: url("styles\medias\pointer.cur"), default;
+  /*url("你的鼠标指针图标路径")*/
+}
+
+/*a标签跳转鼠标样式*/
+a:hover {
+  cursor: url("styles\medias\link.cur"), pointer
+    /*url("你的鼠标指针图标路径")*/
+}
+
+
 .utterances {
   max-width: 100% !important;
 }
