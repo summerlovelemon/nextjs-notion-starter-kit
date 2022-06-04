@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.13.10", "@babel/runtime@^7.2.0":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.13.10", "@babel/runtime@^7.2.0", "@babel/runtime@>=7":
   "integrity" "sha512-38Y8f7YUhce/K7RMwTp7m0uCumpv9hZkitCbBClqQIow1qSbCvGkcegKOXpEWCQLfWmevgRiWokZ1GkpfhbZug=="
   "resolved" "https://registry.npmmirror.com/@babel/runtime/-/runtime-7.18.3.tgz"
   "version" "7.18.3"
@@ -457,10 +457,10 @@
   "resolved" "https://registry.npmmirror.com/@types/prop-types/-/prop-types-15.7.5.tgz"
   "version" "15.7.5"
 
-"@types/react@^17.0.31":
-  "integrity" "sha512-YfhQ22Lah2e3CHPsb93tRwIGNiSwkuz1/blk4e6QrWS0jQzCSNbGLtOEYhPg02W0yGTTmpajp7dCTbBAMN3qsg=="
-  "resolved" "https://registry.npmmirror.com/@types/react/-/react-17.0.45.tgz"
-  "version" "17.0.45"
+"@types/react@^16.8.0 || ^17.0.0 || ^18.0.0", "@types/react@^16.9.0 || ^17.0.0 || ^18.0.0", "@types/react@^18.0.10":
+  "integrity" "sha512-dIugadZuIPrRzvIEevIu7A1smqOAjkSMv8qOfwPt9Ve6i6JT/FQcCHyk2qIAxwsQNKZt5/oGR0T4z9h2dXRAkg=="
+  "resolved" "https://registry.npmmirror.com/@types/react/-/react-18.0.10.tgz"
+  "version" "18.0.10"
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -500,7 +500,7 @@
     "semver" "^7.3.7"
     "tsutils" "^3.21.0"
 
-"@typescript-eslint/parser@^5.15.0":
+"@typescript-eslint/parser@^5.0.0", "@typescript-eslint/parser@^5.15.0":
   "integrity" "sha512-8oGjQF46c52l7fMiPPvX4It3u3V3JipssqDfHQ2hcR0AeR8Zge+OYyKUCm5b70X72N1qXt0qgHenwN6Gc2SXZA=="
   "resolved" "https://registry.npmmirror.com/@typescript-eslint/parser/-/parser-5.27.0.tgz"
   "version" "5.27.0"
@@ -590,7 +590,7 @@
   "resolved" "https://registry.npmmirror.com/acorn-walk/-/acorn-walk-8.2.0.tgz"
   "version" "8.2.0"
 
-"acorn@^8.0.4", "acorn@^8.7.1":
+"acorn@^6.0.0 || ^7.0.0 || ^8.0.0", "acorn@^8.0.4", "acorn@^8.7.1":
   "integrity" "sha512-Xx54uLJQZ19lKygFXOWsscKUbsBZW0CPykPhVQdhIeIwrbPmJzqeASDInc8nKBnp/JT6igTs82qPXz069H8I/A=="
   "resolved" "https://registry.npmmirror.com/acorn/-/acorn-8.7.1.tgz"
   "version" "8.7.1"
@@ -623,7 +623,7 @@
   "resolved" "https://registry.npmmirror.com/ajv-keywords/-/ajv-keywords-3.5.2.tgz"
   "version" "3.5.2"
 
-"ajv@^6.10.0", "ajv@^6.12.4", "ajv@^6.12.5":
+"ajv@^6.10.0", "ajv@^6.12.4", "ajv@^6.12.5", "ajv@^6.9.1":
   "integrity" "sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g=="
   "resolved" "https://registry.npmmirror.com/ajv/-/ajv-6.12.6.tgz"
   "version" "6.12.6"
@@ -1274,7 +1274,7 @@
   "resolved" "https://registry.npmmirror.com/eslint-visitor-keys/-/eslint-visitor-keys-3.3.0.tgz"
   "version" "3.3.0"
 
-"eslint@^8.11.0":
+"eslint@*", "eslint@^3 || ^4 || ^5 || ^6 || ^7 || ^8", "eslint@^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0", "eslint@^6.0.0 || ^7.0.0 || ^8.0.0", "eslint@^8.11.0", "eslint@>=5", "eslint@>=7.0.0":
   "integrity" "sha512-gq0m0BTJfci60Fz4nczYxNAlED+sMcihltndR8t9t1evnU/azx53x3t2UHXC/uRjcbvRw/XctpaNygSTcQD+Iw=="
   "resolved" "https://registry.npmmirror.com/eslint/-/eslint-8.17.0.tgz"
   "version" "8.17.0"
@@ -2108,7 +2108,7 @@
     "array-includes" "^3.1.4"
     "object.assign" "^4.1.2"
 
-"katex@^0.15.3":
+"katex@^0.15.3", "katex@>=0.9":
   "integrity" "sha512-UpzJy4yrnqnhXvRPhjEuLA4lcPn6eRngixW7Q3TJErjg3Aw2PuLFBzTkdUb89UtumxjhHTqL3a5GDGETMSwgJA=="
   "resolved" "https://registry.npmmirror.com/katex/-/katex-0.15.6.tgz"
   "version" "0.15.6"
@@ -2394,7 +2394,7 @@
     "puppeteer-core" "^10.4.0"
     "twemoji" "^13.1.0"
 
-"next@^12.1.1":
+"next@^12.1.1", "next@>=9.0.0":
   "integrity" "sha512-cebwKxL3/DhNKfg9tPZDQmbRKjueqykHHbgaoG4VBRH3AHQJ2HO0dbKFiS1hPhe1/qgc2d/hFeadsbPicmLD+A=="
   "resolved" "https://registry.npmmirror.com/next/-/next-12.1.6.tgz"
   "version" "12.1.6"
@@ -2434,6 +2434,11 @@
   "resolved" "https://registry.npmmirror.com/node-addon-api/-/node-addon-api-3.2.1.tgz"
   "version" "3.2.1"
 
+"node-bin-setup@^1.0.0":
+  "integrity" "sha512-pTeU6NgUrexiLNtd+AKwvg6cngHMvj5FZ5e2bbv2ogBSIc9yhkXSSaTScfSRZnwHIh5YFmYSYlemLWkiKD7rog=="
+  "resolved" "https://registry.npmmirror.com/node-bin-setup/-/node-bin-setup-1.1.0.tgz"
+  "version" "1.1.0"
+
 "node-fetch@*", "node-fetch@^2.6.1":
   "integrity" "sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ=="
   "resolved" "https://registry.npmmirror.com/node-fetch/-/node-fetch-2.6.7.tgz"
@@ -2445,6 +2450,13 @@
   "integrity" "sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw=="
   "resolved" "https://registry.npmmirror.com/node-fetch/-/node-fetch-2.6.1.tgz"
   "version" "2.6.1"
+
+"node@^16.12.0":
+  "integrity" "sha512-lFyeH8to2Qp7XSea1e938ztw8RhbEJ2IifoFo9r0Rpvs+B3LMrSRO52Qy66nrdlg0jJd3v/JwWE86UsUPo/m8w=="
+  "resolved" "https://registry.npmmirror.com/node/-/node-16.12.0.tgz"
+  "version" "16.12.0"
+  dependencies:
+    "node-bin-setup" "^1.0.0"
 
 "normalize-package-data@^2.3.2":
   "integrity" "sha512-/5CMN3T0R4XTj4DcGaexo+roZSdSFW/0AOOTROrjxzCG1wrWXEsGbRKevjlIL+ZDE4sZlJr5ED4YW0yqmkK+eA=="
@@ -2903,7 +2915,7 @@
   "resolved" "https://registry.npmmirror.com/punycode/-/punycode-2.1.1.tgz"
   "version" "2.1.1"
 
-"puppeteer-core@^10.4.0":
+"puppeteer-core@^10.1.0", "puppeteer-core@^10.4.0":
   "integrity" "sha512-KU8zyb7AIOqNjLCN3wkrFXxh+EVaG+zrs2P03ATNjc3iwSxHsu5/EvZiREpQ/IJiT9xfQbDVgKcsvRuzLCxglQ=="
   "resolved" "https://registry.npmmirror.com/puppeteer-core/-/puppeteer-core-10.4.0.tgz"
   "version" "10.4.0"
@@ -2949,7 +2961,7 @@
     "prop-types" "^15.5.6"
     "react-side-effect" "^1.1.0 || ^2.1.0"
 
-"react-dom@^17.0.2":
+"react-dom@*", "react-dom@^0.14.0 || ^15.0.0 || ^16 || ^17 || ^18", "react-dom@^15 || ^16", "react-dom@^16.3.0 || ^17.0.0 || ^18.0.0", "react-dom@^16.8 || ^17.0", "react-dom@^16.8.0  || ^17.0.0 || ^18.0.0", "react-dom@^17.0.2", "react-dom@^17.0.2 || ^18.0.0-0", "react-dom@>=16", "react-dom@>=16.0.0", "react-dom@>=16.8", "react-dom@>=16.8.1":
   "integrity" "sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA=="
   "resolved" "https://registry.npmmirror.com/react-dom/-/react-dom-17.0.2.tgz"
   "version" "17.0.2"
@@ -2969,6 +2981,11 @@
   "version" "3.4.6"
   dependencies:
     "hotkeys-js" "3.9.3"
+
+"react-icons@^4.4.0":
+  "integrity" "sha512-fSbvHeVYo/B5/L4VhB7sBA1i2tS8MkT0Hb9t2H1AVPkwGfVHLJCqyr2Py9dKMxsyM63Eng1GkdZfbWj+Fmv8Rg=="
+  "resolved" "https://registry.npmmirror.com/react-icons/-/react-icons-4.4.0.tgz"
+  "version" "4.4.0"
 
 "react-image@^4.0.3":
   "integrity" "sha512-19MUK9u1qaw9xys8XEsVkSpVhHctEBUeYFvrLTe1PN+4w5Co13AN2WA7xtBshPM6SthsOj77SlDrEAeOaJpf7g=="
@@ -3110,7 +3127,7 @@
     "ts-easing" "^0.2.0"
     "tslib" "^2.1.0"
 
-"react@^17.0.2":
+"react@*", "react@^0.14.0 || ^15.0.0 || ^16 || ^17 || ^18", "react@^15 || ^16", "react@^15.0.0 || ^16.0.0 || ^17.0.0", "react@^16.3.0 || ^17.0.0", "react@^16.3.0 || ^17.0.0 || ^18.0.0", "react@^16.8 || ^17.0", "react@^16.8.0  || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.2", "react@^17.0.2 || ^18.0.0-0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16", "react@>=16.0.0", "react@>=16.8", "react@>=16.8.0", "react@>=16.8.1", "react@>=17", "react@17.0.2":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmmirror.com/react/-/react-17.0.2.tgz"
   "version" "17.0.2"
@@ -3638,6 +3655,8 @@
   "version" "1.0.0"
 
 "tar-fs@*":
+  "integrity" "sha512-V0r2Y9scmbDRLCNex/+hYzvp/zyYjvFbHPNgVTKfQvVrb6guiE/fxP+XblDNR011utopbkex2nM4dHNV6GDsng=="
+  "resolved" "https://registry.npmmirror.com/tar-fs/-/tar-fs-2.1.1.tgz"
   "version" "2.1.1"
   dependencies:
     "chownr" "^1.1.1"
@@ -3735,17 +3754,17 @@
   "resolved" "https://registry.npmmirror.com/ts-easing/-/ts-easing-0.2.0.tgz"
   "version" "0.2.0"
 
+"tslib@*", "tslib@^2.1.0":
+  "integrity" "sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ=="
+  "resolved" "https://registry.npmmirror.com/tslib/-/tslib-2.4.0.tgz"
+  "version" "2.4.0"
+
 "tslib@^1.0.0", "tslib@^1.8.1":
   "integrity" "sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg=="
   "resolved" "https://registry.npmmirror.com/tslib/-/tslib-1.14.1.tgz"
   "version" "1.14.1"
 
 "tslib@^2.0.0":
-  "integrity" "sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ=="
-  "resolved" "https://registry.npmmirror.com/tslib/-/tslib-2.4.0.tgz"
-  "version" "2.4.0"
-
-"tslib@^2.1.0":
   "integrity" "sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ=="
   "resolved" "https://registry.npmmirror.com/tslib/-/tslib-2.4.0.tgz"
   "version" "2.4.0"
@@ -3791,7 +3810,7 @@
   "resolved" "https://registry.npmmirror.com/type-fest/-/type-fest-0.20.2.tgz"
   "version" "0.20.2"
 
-"typescript@^4.4.4":
+"typescript@^4.4.4", "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta":
   "integrity" "sha512-WOkT3XYvrpXx4vMMqlD+8R8R37fZkjyLGlxavMc4iB8lrl8L0DeTcHbYgw/v0N/z9wAFsgBhcsF0ruoySS22mA=="
   "resolved" "https://registry.npmmirror.com/typescript/-/typescript-4.7.3.tgz"
   "version" "4.7.3"

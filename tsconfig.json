@@ -16,7 +16,8 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "typeRoots": ["./node_modules/@types"],
-    "incremental": true
+    "incremental": true,
+    "allowSyntheticDefaultImports": true
   },
   "exclude": ["node_modules"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "site.config.ts"]
