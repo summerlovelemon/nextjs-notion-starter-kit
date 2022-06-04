@@ -16,7 +16,8 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "typeRoots": ["./node_modules/@types"],
+    "incremental": true
   },
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "lib/locale.js", "blog.config.js"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "site.config.ts"]
 }

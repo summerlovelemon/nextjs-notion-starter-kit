@@ -1,10 +1,25 @@
 import Head from 'next/head'
 import * as React from 'react'
+
 import * as types from 'lib/types'
+import * as config from 'lib/config'
+import { getSocialImageUrl } from 'lib/get-social-image-url'
 
-// TODO: remove duplication between PageHead and NotionPage Head
+export const PageHead: React.FC<
+  types.PageProps & {
+    title?: string
+    description?: string
+    image?: string
+    url?: string
+  }
+> = ({ site, title, description, pageId, image, url }) => {
+  const rssFeedUrl = `${config.host}/feed`
 
-export const PageHead: React.FC<types.PageProps> = ({ site }) => {
+  title = title ?? site?.name
+  description = description ?? site?.description
+
+  const socialImageUrl = getSocialImageUrl(pageId) || image
+
   return (
     <Head>
       <meta charSet='utf-8' />
@@ -14,26 +29,56 @@ export const PageHead: React.FC<types.PageProps> = ({ site }) => {
         content='width=device-width, initial-scale=1, shrink-to-fit=no'
       />
 
-      {site?.description && (
+      <meta name='robots' content='index,follow' />
+      <meta property='og:type' content='website' />
+
+      {site && (
         <>
-          <meta name='description' content={site.description} />
-          <meta property='og:description' content={site.description} />
+          <meta property='og:site_name' content={site.name} />
+          <meta property='twitter:domain' content={site.domain} />
         </>
       )}
 
-      <meta name='theme-color' content='#EB625A' />
-      <meta property='og:type' content='website' />
+      {config.twitter && (
+        <meta name='twitter:creator' content={`@${config.twitter}`} />
+      )}
 
-      <script type="text/javascript" src="http://cdn.repository.webfont.com/wwwroot/js/wf/youziku.api.min.js"></script>
-      <script type="text/javascript">
-        $webfont.load("body", "75a63f6c2f6d4bb7aee6902ac050dec2", "SourceHanS-S_B");
-        $webfont.load(".notion-h-title", "57f09dabc1804f9b84b599c9b079f4f7", "Source-Han-Light")
-        $webfont.load(".notion-callout-text", "4b16fb28383b409090d0b09c84c8c8d9", "JetLinkMediumMing");
-        /*$webfont.load("notion-callout-text", "75a63f6c2f6d4bb7aee6902ac050dec2", "SourceHanS-S_B");*/
+      {description && (
+        <>
+          <meta name='description' content={description} />
+          <meta property='og:description' content={description} />
+          <meta name='twitter:description' content={description} />
+        </>
+      )}
 
-        $webfont.draw();
-      </script>
-      <script async defer data-website-id="80f5f89a-46c6-450d-89ce-12eb8632c3f9" src="https://umami.wltea.xyz/umami.js"></script>
+      {socialImageUrl ? (
+        <>
+          <meta name='twitter:card' content='summary_large_image' />
+          <meta name='twitter:image' content={socialImageUrl} />
+          <meta property='og:image' content={socialImageUrl} />
+        </>
+      ) : (
+        <meta name='twitter:card' content='summary' />
+      )}
+
+      {url && (
+        <>
+          <link rel='canonical' href={url} />
+          <meta property='og:url' content={url} />
+          <meta property='twitter:url' content={url} />
+        </>
+      )}
+
+      <link
+        rel='alternate'
+        type='application/rss+xml'
+        href={rssFeedUrl}
+        title={site?.name}
+      />
+
+      <meta property='og:title' content={title} />
+      <meta name='twitter:title' content={title} />
+      <title>{title}</title>
     </Head>
   )
 }
