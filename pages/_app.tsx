@@ -53,12 +53,8 @@ export default function App({ Component, pageProps }: AppProps) {
     }
 
     if (fathomId) {
-<<<<<<< HEAD
-      Fathom.load(fathomId)
-=======
       Fathom.load(fathomId, fathomConfig)
     }
->>>>>>> upstream/main
 
     if (posthogId) {
       posthog.init(posthogId, posthogConfig)
