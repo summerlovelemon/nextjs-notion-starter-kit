@@ -2493,7 +2493,7 @@
   "resolved" "https://registry.npmmirror.com/notion-types/-/notion-types-6.12.6.tgz"
   "version" "6.12.6"
 
-"notion-utils@^6.12.6", "notion-utils@^6.12.9":
+"notion-utils@^6.12.9":
   "integrity" "sha512-VSVBfaQ5hDtDwLsOMyp16etp2jNslyXTCmoQ5T8YBCGh4wpRAYsVsuaO+QUG5lrbAK32hE6N6HF2rUr/Qa1dyQ=="
   "resolved" "https://registry.npmmirror.com/notion-utils/-/notion-utils-6.12.9.tgz"
   "version" "6.12.9"
@@ -2873,7 +2873,7 @@
   "resolved" "https://registry.npmmirror.com/prettier/-/prettier-2.6.2.tgz"
   "version" "2.6.2"
 
-"prismjs@^1.27.0":
+"prismjs@^1.27.0", "prismjs@^1.28.0":
   "integrity" "sha512-8aaXdYvl1F7iC7Xm1spqSaY/OJBpYW3v+KJ+F17iYxvdc8sfjW194COK5wVhMZX45tGteiBQgdvD/nhxcRwylw=="
   "resolved" "https://registry.npmmirror.com/prismjs/-/prismjs-1.28.0.tgz"
   "version" "1.28.0"

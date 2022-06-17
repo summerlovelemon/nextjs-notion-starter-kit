@@ -39,6 +39,7 @@ import styles from './styles.module.css'
 
 const Code = dynamic(() =>
   import('react-notion-x/build/third-party/code').then(async (m) => {
+    const newLocal = 'prismjs/components/prism-solidity.js'
     // add / remove any prism syntaxes here
     await Promise.all([
       import('prismjs/components/prism-markup-templating.js'),
@@ -65,8 +66,7 @@ const Code = dynamic(() =>
       import('prismjs/components/prism-reason.js'),
       import('prismjs/components/prism-rust.js'),
       import('prismjs/components/prism-sass.js'),
-      import('prismjs/components/prism-scss.js'),
-      import('prismjs/components/prism-solidity.js'),
+
       import('prismjs/components/prism-sql.js'),
       import('prismjs/components/prism-stylus.js'),
       import('prismjs/components/prism-swift.js'),
@@ -286,6 +286,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         footer={footer}
       />
 
-
-      )
+      <GitHubShareButton />
+    </>
+  )
 }
