@@ -26,12 +26,12 @@ export const FooterImpl: React.FC = () => {
     setHasMounted(true)
   }, [])
 
+  const d = new Date()
+  const ThisYear = d.getFullYear
+
   return (
     <footer className={styles.footer}>
-      <div className={styles.copyright}>Copyright 2021-<script>
-        var d = new Date();
-        document.getElementById("demo").innerHTML = d.getFullYear();
-      </script> {config.author}</div>
+      <div className={styles.copyright}>Copyright 2021- {ThisYear} {config.author}</div>
 
       <div className={styles.settings}>
         {hasMounted && (
@@ -47,7 +47,7 @@ export const FooterImpl: React.FC = () => {
         )}
       </div>
 
-      
+
     </footer>
   )
 }
