@@ -27,7 +27,7 @@ export const FooterImpl: React.FC = () => {
   }, [])
 
   const d = new Date()
-  const ThisYear = d.getFullYear
+  const ThisYear = d.getFullYear()
 
   return (
     <footer className={styles.footer}>

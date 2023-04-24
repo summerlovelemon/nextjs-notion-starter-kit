@@ -201,7 +201,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
     [block, recordMap, isBlogPost]
   )
 
-  const comment = <WalineComment />
+  const comment = React.useMemo(() => <WalineComment serverURL={'https://waline.wltea.xyz'} el={'#waline'} />, [])
 
   const footer = React.useMemo(() => <Footer />, [])
 

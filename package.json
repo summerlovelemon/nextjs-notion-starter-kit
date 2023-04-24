@@ -76,6 +76,8 @@
 
     "isomorphic-unfetch": "^3.1.0",
 
+    "katex": "^0.16.6",
+
     "lqip-modern": "^1.2.0",
 
     "next": "^12.2.3",
@@ -95,6 +97,10 @@
     "p-memoize": "^6.0.1",
 
     "posthog-js": "^1.20.2",
+
+    "prism": "^4.1.2",
+
+    "prismjs": "^1.29.0",
 
     "react": "^17.0.2",
 
