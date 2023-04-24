@@ -1,5 +1,16 @@
 import React, { useEffect, useRef, memo } from 'react';
-import { init, WalineCommentSorting, WalineEmojiInfo, WalineEmojiPresets, WalineHighlighter, WalineImageUploader, WalineInstance, WalineLocale, WalineSearchOptions, WalineTexRenderer } from '@waline/client';
+import {
+  init,
+  WalineCommentSorting,
+  WalineEmojiInfo,
+  WalineEmojiPresets,
+  WalineHighlighter,
+  WalineImageUploader,
+  WalineInstance,
+  WalineLocale,
+  WalineSearchOptions,
+  WalineTexRenderer
+} from '@waline/client';
 import '@waline/client/dist/waline.css';
 
 
