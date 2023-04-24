@@ -79,6 +79,11 @@ export const PageHead: React.FC<
         title={site?.name}
       />
 
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+      />
+
       <meta property='og:title' content={title} />
       <meta name='twitter:title' content={title} />
       <title>{title}</title>
