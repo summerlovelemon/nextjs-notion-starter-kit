@@ -27,7 +27,7 @@ export const FooterImpl: React.FC = () => {
   }, [])
 
   const d = new Date()
-  const ThisYear = d.getFullYear
+  const ThisYear = d.getFullYear()
 
   return (
     <footer className={styles.footer}>
@@ -47,6 +47,9 @@ export const FooterImpl: React.FC = () => {
         )}
       </div>
 
+      <div className="styles_powerby__nwSPg">
+        <div className={styles.copyright}>Powered by&nbsp;<a href="http://transitivebullsh.it" title="Visit him" >transitive-bullshit</a></div>
+      </div>
 
     </footer>
   )
