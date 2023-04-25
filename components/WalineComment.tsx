@@ -13,16 +13,13 @@ import {
 } from '@waline/client';
 import '@waline/client/dist/waline.css';
 
+type WalineOptions = Pick<WalineInitOptionsType, 'serverURL' | 'el'>
 
-type WalineOptions = Pick<WalineInitOptions, 'serverURL' | 'el'>
-
-interface WalineInitOptions {
+interface WalineInitOptionsType {
   el: string | HTMLElement | null;
   path: string;
   serverURL: string;
-  //locale:WalineLocale;
   lang?: string;
-  //highlighter: WalineHighlighter | false;
   emoji: (WalineEmojiInfo | WalineEmojiPresets)[] | false;
   dark: string | boolean;
   commentSorting: WalineCommentSorting;
@@ -32,15 +29,16 @@ interface WalineInitOptions {
   wordLimit: number | [number, number];
   pageSize: number;
   imageUploader: WalineImageUploader | false;
-  //texRenderer:WalineTexRenderer | false;
-  //search:WalineSearchOptions | false;
+  highlighter: WalineHighlighter | false;
+  texRenderer: WalineTexRenderer | false;
+  search: WalineSearchOptions | false;
   copyright: boolean;
-  //recaptchaV3Key:string;
-  //turnstileKey:string;
+  recaptchaV3Key?: string;
+  turnstileKey?: string;
   reaction: boolean | string[];
 }
 
-const WalineInitOptions = {
+const defaultWalineInitOptions: WalineInitOptionsType = {
   el: '#waline',
   serverURL: "https://waline.wltea.xyz",
   path: 'window.location.pathname',
@@ -54,30 +52,16 @@ const WalineInitOptions = {
   wordLimit: 0,
   pageSize: 10,
   imageUploader: false,
-  /* highlighter: (code, lang) => {
-    if (!window.Prism.languages[lang]) {
-      window.Prism.plugins.autoloader.loadLanguages(lang);
-    }
-  
-    return window.Prism.highlight(
-      code,
-      window.Prism.languages[lang] || window.Prism.languages.text,
-      lang
-    );
-  },
-  texRenderer: (blockMode, tex) =>
-  katex.renderToString(tex, {
-    displayMode: blockMode,
-    throwOnError: false,
-  }), */
+  highlighter: false,
+  texRenderer: false,
+  search: false,
   copyright: true,
-  /* turnstileKey:,
-  recaptchaV3Key:, */
+  recaptchaV3Key: undefined,
+  turnstileKey: undefined,
   reaction: true,
 }
 
 interface WalineProps extends WalineOptions { }
-
 
 const WalineComment = memo(function WalineComment(props: WalineProps) {
   const walineInstanceRef = useRef<WalineInstance>(null);
