@@ -40,7 +40,7 @@ interface WalineInitOptions {
   reaction: boolean | string[];
 }
 
-const options: WalineInitOptions = {
+const WalineInitOptions = {
   el: '#waline',
   serverURL: "https://waline.wltea.xyz",
   path: 'window.location.pathname',
@@ -79,7 +79,7 @@ const options: WalineInitOptions = {
 interface WalineProps extends WalineOptions { }
 
 
-const WalineComment = memo((props: WalineProps) => {
+const WalineComment = memo(function WalineComment(props: WalineProps) {
   const walineInstanceRef = useRef<WalineInstance>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -97,5 +97,7 @@ const WalineComment = memo((props: WalineProps) => {
 
   return <div ref={containerRef} />;
 });
+
+WalineComment.displayName = 'WalineComment';
 
 export default WalineComment;
