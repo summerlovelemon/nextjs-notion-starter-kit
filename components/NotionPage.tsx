@@ -27,6 +27,7 @@ import { Page404 } from './Page404'
 import { PageAside } from './PageAside'
 import { PageHead } from './PageHead'
 import styles from './styles.module.css'
+import WalineComment from './WalineComment'
 
 // -----------------------------------------------------------------------------
 // dynamic imports for optional components
@@ -34,7 +35,6 @@ import styles from './styles.module.css'
 
 const Code = dynamic(() =>
   import('react-notion-x/build/third-party/code').then(async (m) => {
-    const newLocal = 'prismjs/components/prism-solidity.js'
     // add / remove any prism syntaxes here
     await Promise.all([
       import('prismjs/components/prism-markup-templating.js'),
@@ -61,7 +61,8 @@ const Code = dynamic(() =>
       import('prismjs/components/prism-reason.js'),
       import('prismjs/components/prism-rust.js'),
       import('prismjs/components/prism-sass.js'),
-
+      import('prismjs/components/prism-scss.js'),
+      import('prismjs/components/prism-solidity.js'),
       import('prismjs/components/prism-sql.js'),
       import('prismjs/components/prism-stylus.js'),
       import('prismjs/components/prism-swift.js'),
@@ -200,6 +201,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
     [block, recordMap, isBlogPost]
   )
 
+  const comment = React.useMemo(() => <WalineComment serverURL={'https://waline.wltea.xyz'} el={'#waline'} />, [])
+
   const footer = React.useMemo(() => <Footer />, [])
 
   if (router.isFallback) {
@@ -278,7 +281,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         mapImageUrl={mapImageUrl}
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside}
-        footer={footer}
+
       />
 
       <GitHubShareButton />

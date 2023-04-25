@@ -62,6 +62,8 @@
 
     "@vercel/og": "^0.0.20",
 
+    "@waline/client": "^2.14.9",
+
     "classnames": "^2.3.1",
 
     "date-fns": "^2.28.0",
@@ -73,6 +75,8 @@
     "got": "^12.0.3",
 
     "isomorphic-unfetch": "^3.1.0",
+
+    "katex": "^0.16.6",
 
     "lqip-modern": "^1.2.0",
 
@@ -94,6 +98,10 @@
 
     "posthog-js": "^1.20.2",
 
+    "prism": "^4.1.2",
+
+    "prismjs": "^1.29.0",
+
     "react": "^17.0.2",
 
     "react-body-classname": "^1.3.1",
@@ -108,7 +116,9 @@
 
     "rss": "^1.2.2",
 
-    "vercel": "^28.5.3"
+    "vercel": "^28.5.3",
+
+    "waline": "^0.0.1"
 
   },
 

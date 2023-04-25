@@ -29,8 +29,8 @@ export const PageHead: React.FC<
         content='width=device-width, initial-scale=1, shrink-to-fit=no'
       />
 
-      <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fefffe" key="theme-color-light"/>
-      <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2d3439" key="theme-color-dark"/>
+      <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fefffe" key="theme-color-light" />
+      <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2d3439" key="theme-color-dark" />
 
       <meta name='robots' content='index,follow' />
       <meta property='og:type' content='website' />
@@ -77,6 +77,11 @@ export const PageHead: React.FC<
         type='application/rss+xml'
         href={rssFeedUrl}
         title={site?.name}
+      />
+
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/@waline/client@v2/dist/waline.css"
       />
 
       <meta property='og:title' content={title} />
