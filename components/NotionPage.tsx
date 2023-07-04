@@ -27,7 +27,7 @@ import { Page404 } from './Page404'
 import { PageAside } from './PageAside'
 import { PageHead } from './PageHead'
 import styles from './styles.module.css'
-import WalineComment from './WalineComment'
+// import WalineComment from './WalineComment'
 
 // -----------------------------------------------------------------------------
 // dynamic imports for optional components
@@ -201,7 +201,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
     [block, recordMap, isBlogPost]
   )
 
-  const comment = React.useMemo(() => <WalineComment serverURL={'https://waline.wltea.xyz'} el={'#waline'} />, [])
+  // const comment = React.useMemo(() => <WalineComment serverURL={'https://waline.wltea.xyz'} el={'#waline'} />, [])
 
   const footer = React.useMemo(() => <Footer />, [])
 
