@@ -38,7 +38,7 @@ interface WalineInitOptionsType {
   reaction: boolean | string[];
 }
 
-const defaultWalineInitOptions: WalineInitOptionsType = {
+/* const defaultWalineInitOptions: WalineInitOptionsType = {
   el: '#waline',
   serverURL: "https://waline.wltea.xyz",
   path: 'window.location.pathname',
@@ -59,7 +59,7 @@ const defaultWalineInitOptions: WalineInitOptionsType = {
   recaptchaV3Key: undefined,
   turnstileKey: undefined,
   reaction: true,
-}
+} */
 
 interface WalineProps extends WalineOptions { }
 
